@@ -28,7 +28,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 cartItems: state.cartItems.filter(
-                    CartItem => CartItem.id != action.payload.id 
+                    CartItem => CartItem.id !== action.payload.id 
                 )
             };
         default: 
